@@ -1,0 +1,50 @@
+{
+  "name": "Formulario PWA y Memorandum",
+  "short_name": "PWA Formulario",
+  "description": "Aplicación para registrar datos y jugar un memorándum interactivo",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "icons": [
+    {
+      "src": "/assets/Logo-Castel.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/Logo-Castel.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "scope": "/",
+  "shortcuts": [
+    {
+      "name": "Formulario de Registro",
+      "short_name": "Registro",
+      "description": "Registrar tus datos en el formulario",
+      "url": "/index.html",
+      "icons": [
+        {
+          "src": "/assets/Logo-Castel.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Juego Memorandum",
+      "short_name": "Juego",
+      "description": "Iniciar el juego de memorándum",
+      "url": "/index2.html",
+      "icons": [
+        {
+          "src": "/assets/Logo-Castel.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}
