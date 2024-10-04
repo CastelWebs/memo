@@ -216,3 +216,17 @@ document.getElementById('registroForm').addEventListener('submit', function(e) {
         console.error('Error:', error);
     });
 });
+
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./serviceWorker.js')
+      .then((registration) => {
+        console.log('ServiceWorker registrado con éxito: ', registration.scope);
+      })
+      .catch((error) => {
+        console.log('ServiceWorker falló en registrarse: ', error);
+      });
+  });
+}
+
