@@ -173,7 +173,7 @@ function returnForm() {
 
 function victoryRequest() {
     const email =  localStorage.getItem("email")
-    fetch('http://localhost:3000/actualizarVictoria', {
+    fetch('http://api.castelmexico.com.mx/actualizarVictoria', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -198,7 +198,7 @@ document.getElementById('registroForm').addEventListener('submit', function(e) {
     const phone = document.getElementById('phone').value;
     const company = document.getElementById('company').value;
 
-    fetch('http://localhost:3000/registrar', {
+    fetch('http://api.castelmexico.com.mx/registrar', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -216,17 +216,4 @@ document.getElementById('registroForm').addEventListener('submit', function(e) {
         console.error('Error:', error);
     });
 });
-
-
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./serviceWorker.js')
-      .then((registration) => {
-        console.log('ServiceWorker registrado con éxito: ', registration.scope);
-      })
-      .catch((error) => {
-        console.log('ServiceWorker falló en registrarse: ', error);
-      });
-  });
-}
 
