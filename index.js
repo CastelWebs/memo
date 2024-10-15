@@ -173,7 +173,7 @@ function returnForm() {
 
 function victoryRequest() {
     const email =  localStorage.getItem("email")
-    fetch('http://api.castelmexico.com.mx/actualizarVictoria', {
+    fetch('http://localhost:3000/actualizarVictoria', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -198,7 +198,7 @@ document.getElementById('registroForm').addEventListener('submit', function(e) {
     const phone = document.getElementById('phone').value;
     const company = document.getElementById('company').value;
 
-    fetch('http://api.castelmexico.com.mx/registrar', {
+    fetch('http://localhost:3000/registrar', {    
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
