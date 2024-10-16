@@ -24,7 +24,7 @@
       "name": "Formulario de Registro",
       "short_name": "Registro",
       "description": "Registrar tus datos en el formulario",
-      "url": "/index.html",
+      "url": "./index.html",
       "icons": [
         {
           "src": "./assets/Logo-Castel.png",
